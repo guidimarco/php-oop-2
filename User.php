@@ -1,6 +1,9 @@
 <?php
 
     class User {
+        // trait ref
+        use CurrentDateTime;
+
         // instance var
         protected $name; // not null
         protected $lastname; // null
@@ -16,6 +19,8 @@
             $this -> mail = $_mail;
             $this -> lastname = $_lastname;
             $this -> date_of_birth = $_date_of_birth;
+            $this -> created_at = $this -> getCurDateTime();
+
         }
     };
 
