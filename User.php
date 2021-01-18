@@ -39,6 +39,16 @@
                 throw new Exception("Error Processing Request: inserisci una stringa");
             }
         }
+
+        public function getAllInfo() {
+            return [
+                'name' => $this -> name,
+                'lastname' => $this -> lastname,
+                'nickname' => $this -> nickname,
+                'date_of_birth' => $this -> date_of_birth,
+                'mail' => $this -> mail,
+            ];
+        }
     };
 
 ?>
