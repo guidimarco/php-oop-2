@@ -49,6 +49,14 @@
                 'mail' => $this -> mail,
             ];
         }
+
+        public function printInfo() {
+            $allInfo = $this -> getAllInfo();
+
+            foreach ($allInfo as $key => $value) {
+                echo $key . ": " . $value . "<br>";
+            }
+        }
     };
 
 ?>

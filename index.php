@@ -15,9 +15,10 @@
     $user_1 = new User('Mario', 'mario22', 'mario@gmail.com');
     var_dump($user_1);
 
-    $user_1_info = $user_1 -> getAllInfo();
-    var_dump($user_1_info);
+    $user_1 -> printInfo();
 
     $user_2 = new User('Maria', 'maria1', 'mar22@hotmail.it', 'Verdi');
     var_dump($user_2);
+
+    $user_2 -> printInfo();
 ?>
