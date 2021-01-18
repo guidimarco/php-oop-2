@@ -54,7 +54,9 @@
             $allInfo = $this -> getAllInfo();
 
             foreach ($allInfo as $key => $value) {
-                echo $key . ": " . $value . "<br>";
+                if (!is_null($value)) {
+                    echo "<li>" . $key . ": " . $value . "</li>";
+                }
             }
         }
     };
